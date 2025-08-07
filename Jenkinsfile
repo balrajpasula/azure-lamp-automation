@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/<your-username>/azure-lamp-automation.git'
+                git 'https://github.com/balrajpasula/azure-lamp-automation.git'
             }
         }
         stage('Terraform Init & Apply') {
