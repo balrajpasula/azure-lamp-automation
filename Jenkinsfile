@@ -5,7 +5,7 @@ pipeline {
         TF_VAR_client_id       = credentials('AZURE_CLIENT_ID')
         TF_VAR_client_secret   = credentials('AZURE_SECRET')
         TF_VAR_tenant_id       = credentials('AZURE_TENANT')
-        TF_VAR_ssh_public_key  = '/home/azureuser/.ssh/id_rsa.pub'
+        TF_VAR_ssh_public_key  = '/var/lib/jenkins/.ssh/id_rsa.pub'
     }
     stages {
         stage('Checkout') {
